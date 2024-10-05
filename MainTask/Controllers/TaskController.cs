@@ -42,7 +42,7 @@ namespace MainTask.Controllers
             return Ok(t);
         }
         [Authorize(Roles ="admin")]
-        [HttpPost("update")]
+        [HttpPut("update")]
         public IActionResult UpdateTask(TaskItem task)
         {
             _taskServices.UpdateTask(task);
