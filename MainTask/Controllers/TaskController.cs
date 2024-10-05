@@ -41,7 +41,7 @@ namespace MainTask.Controllers
             }
             return Ok(t);
         }
-        [Authorize(Roles ="admin")]
+        [Authorize]
         [HttpPut("update")]
         public IActionResult UpdateTask(TaskItem task)
         {
